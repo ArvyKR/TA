@@ -1,0 +1,667 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hy",
+        "Hey",
+        "Hello",
+        "Halo beach bliss",
+        "Hallo",
+        "halo"
+      ],
+      "responses": [
+        "Selamat Datang Di Beach Bliss, Kami menyediakan Rekomendasi Pantai untuk Daerah Kota Batam. Kamu ingin pergi kemana?",
+        "Halo! Lagi bingung ya mau liburan kemana, di Batam banyak rekomendasi wisata pantai yang menarik loh."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "terima kasih", "makasih"],
+      "responses": ["Senang bisa membantu!", "Tidak masalah!", "Sama-sama"]
+    },
+    {
+      "tag": "RekomendasiPantai",
+      "patterns": [
+        "Lokasi Pantai",
+        "Rekomendasi Pantai",
+        "Pantai yang di rekomendasikan",
+        "iyanih bingung, ada rekomendasi ga",
+        "iya",
+        "Rekomendasi Pantai di Batam"
+      ],
+      "responses": [
+        "Kami merekomendasikan tiga Lokasi Pantai dibatam Sebagai Berikut<br> 1. Barelang<br> 2. Sekupang<br> 3. Nongsa"
+      ]
+    },
+    {
+      "tag": "nongsa",
+      "patterns": [
+        "nongsa",
+        "pantai nongsa",
+        "pantai di nongsa",
+        "lokasi nongsa",
+        "rekomendasi pantai di nongsa",
+        "3"
+      ],
+      "responses": [
+        "Berikut ini adalah pantai yang kami rekomendasikan di daerah Nongsa.<br>- Nuvasa Bay<br>- Nongsa Beach<br>- Bale Bale<br>- Pantai Payung<br>Masukan nama pantai untuk info lebih lengkapnya."
+      ]
+    },
+    {
+      "tag": "barelang",
+      "patterns": [
+        "barelang",
+        "pantai di barelang",
+        "pantai barelang",
+        "lokasi barelang",
+        "lokasi galang",
+        "rekomendasi pantai di barelang",
+        "1"
+      ],
+      "responses": [
+        "Berikut ini adalah pantai yang kami rekomendasikan di daerah Barelang.<br>- Elyora<br>- Mirota<br>- Glory Melur<br>- Reviola<br>- Vio Vio<br>Masukan nama pantai untuk info lebih lengkapnya."
+      ]
+    },
+    {
+      "tag": "sekupang",
+      "patterns": [
+        "sekupang",
+        "pantai sekupang",
+        "rekomendasi pantai di sekupang",
+        "lokasi sekupang",
+        "2"
+      ],
+      "responses": [
+        "Berikut ini adalah pantai yang kami rekomendasikan di daerah Sekupang.<br>- Pantai Tanjung Pinggir<br>Masukan nama pantai untuk info lebih lengkapnya."
+      ]
+    },
+    {
+      "tag": "tanjungpinggir",
+      "patterns": [
+        "Pantai tanjung Pinggir",
+        "tanjung pinggir",
+        "tanjungpinggir"
+      ],
+      "responses": [
+        "Pantai Tanjung Pinggir merupakan sebuah pantai yang cukup sepi dan masih alami. Pantai Tanjung Pinggir memiliki spot foto yang estetik, pasir yang bersih dan lembut serta area berbatu yang biasanya digunakan para penduduk setempat untuk memancing."
+      ]
+    },
+    {
+      "tag": "nongsabeach",
+      "patterns": [
+        "pantai nongsa beach",
+        "nongsa beach"
+      ],
+      "responses": [
+        "Pantai ini sangat populer bagi masyarakat Batam dan sekitarnya. Tempat wisata ini merupakan sebuah kawasan wisata pantai yang sangat eksotis. Dengan hamparan pasir pantainya yang putih dan arus & ombak lautnya yang tenang, tentu sangat cocok untuk menjadi spot liburan yang ideal. "
+      ]
+    },
+    {
+      "tag": "nuvasabay",
+      "patterns": [
+        "Pantai nuvasa bay",
+        "nuvasa bay",
+        "nuvasa",
+        "nuvasabay"
+      ],
+      "responses": [
+        "Pantai Nuvasa di Nuvasa Bay menyajikan panorama alam yang indah dengan laut biru dan pasir putih. Selain pantai, ada juga Sea Forest Adventure yang menawarkan berbagai kegiatan alam dan konsep petualangan, menjadikan Nuvasa Bay destinasi ideal untuk staycation."
+      ]
+    },
+    {
+      "tag": "balebale",
+      "patterns": [
+        "Pantai bale bale",
+        "bale bale",
+        "balebale"
+      ],
+      "responses": [
+        "Pantai Bale Bale memiliki pasir putih yang lembut dan air laut yang jernih berwarna biru kehijauan. Ombaknya juga cukup tenang, sehingga aman untuk berenang atau bermain air."
+      ]
+    },
+    {
+      "tag": "pantaipayung",
+      "patterns": [
+        "Pantai Payung",
+        "pantaipayung",
+        "pantai payung nongsa"
+      ],
+      "responses": [
+        "Pantai Payung menawarkan beragam kecantikan. Disana menyuguhkan air laut yang jernih dan memiliki warna biru tampak begitu indah. Area pasir yang putih selalu dibersihkan oleh petugas agar wisatawan yang datang bisa merasa betah."
+      ]
+    },
+    {
+      "tag": "elyora",
+      "patterns": [
+        "Pantai elyora",
+        "elyora",
+        "elyora beach"
+      ],
+      "responses": [
+        "Pantai Elyora jadi salah satu dari sekian pantai yang indah di Batam karena Air laut di Pantai Elyora sangat jernih, warnanya perbaduan antara warna biru dan hijau toska. Salah satu yang menarik dari pantai ini yaitu adanya bibir pantai yang ditumbuhi oleh rumput jepang, kadang berwarna hijau dan kekuningan."
+      ]
+    },
+    {
+      "tag": "mirota",
+      "patterns": [
+        "Pantai mirota",
+        "mirota",
+        "mirota beach"
+      ],
+      "responses": [
+        "Pantai Mirota dikenal sebagai surga pasir putih di Pulau Batam. Pantai ini memiliki daya tarik yaitu pasir putihnya yang halus serta airnya yang jernih. Garis pantai yang dikelilingi oleh rindangnya pepohonan, memberikan nuansa sejuk dan damai yang langsung memikat hati, setiap pengunjung yang datang."
+      ]
+    },
+    {
+      "tag": "glorymelur",
+      "patterns": [
+        "Pantai Glory Melur",
+        "pantai melur",
+        "glorymelur",
+        "glory melur"
+      ],
+      "responses": [
+        "Pantai Glory Melur merupakan salah satu tempat wisata pantai yang memiliki luas 10 hektar dengan pemandangan yang indah. Selain dikenal pasir pantainya yang berwarna putih, di pantai tersebut juga dilengkapi dengan fasilitas untuk bertamasya. Pantai ini dijuluki Balinya Batam"
+      ]
+    },
+    {
+      "tag": "viovio",
+      "patterns": [
+        "Pantai Vio Vio",
+        "viovio"
+      ],
+      "responses": [
+        "Pantai Viovio merupakan sebuah tempat wisata populer yang wajib untuk dikunjungi terlebih pada hari libur. Daya tarik pertama yang dimiliki oleh Pantai Viovio adalah pasir putih yang membentang sepanjang bibir pantai. Pasir putih ini terlihat sangat cantik bersama dengan birunya lautan yang membentang.<br>Kami merekomendasikan untuk datang menjelang sore agar mendapatkan pemandangan Sunset yang indah dari langit pantai ini."
+      ]
+    },
+    {
+      "tag": "reviola",
+      "patterns": [
+        "Pantai reviola",
+        "reviola",
+        "reviola beach"
+      ],
+      "responses": [
+        "Pantai dengan hamparan pasir putih dan dihiasi pohon cemara dapat membuat tepaku bagi siapa saja yang berkunjung. Pantai ini memiliki garis pantai yang cukup panjang.  Pantai Reviola juga memiliki bibir pantai yang lebar. Para wisatawan yang datang ke tempat ini bisa bermain voli, jalan-jalan menikmati pemandangan, bermain istana pasir, berjemur, juga bahkan ada yang menggelar tikar untuk sekaligus piknik di sekitar pantai."
+      ]
+    },
+    {
+      "tag": "fasilitastanjungpinggir",
+      "patterns": [
+        "Fasilitas di Pantai tanjung Pinggir",
+        "fasilitas pantai tanjung pinggir",
+        "fasilitas apa saja yang ada di pantai tanjung pinggir",
+        "fasilitias yang ada di pantai tanjung pinggir",
+        "wahana di Pantai tanjung Pinggir",
+        "wahana pantai tanjung pinggir",
+        "wahana apa saja yang ada di pantai tanjung pinggir",
+        "wahana yang ada di pantai tanjung pinggir"
+      ],
+      "responses": [
+        "Fasilitas Pantai Tangjung Pinggir untuk mendukung aktivitas pengunjung berupa tempat parkir, mushola, toilet, serta kantin.<br>Naik kano, Harga sewa single sekitar Rp 30.000 dan double sekitar Rp 50.000.<br>Camping Ground<br>Banana Boat"
+      ]
+    },
+    {
+      "tag": "fasilitasnongsabeach",
+      "patterns": [
+        "fasilitas yang ada di pantai nongsa beach",
+        "fasilitas nongsa beach",
+        "fasilitas di pantai nongsa",
+        "fasilitas apa saja yang ada di pantai nongsa beach",
+        "wahana yang ada di pantai nongsa beach",
+        "wahana nongsa beach",
+        "wahana di pantai nongsa",
+        "wahana apa saja yang ada di pantai nongsa beach","banana boat","banana boot"
+      ],
+      "responses": [
+        "Fasilitas yang bisa kamu manfaatkan di pantai Nongsa ini terbilang banyak. Mulai dari mushola, kamar mandi, lapangan golf, tempat makan, area parkir nan luas.<br>Spot Snorkeling Bawah Laut<br>Dermaga dan Hutan Buatan.<br><br>Berikut wahana yang disediakan:<br>Banana Boot Rp.250.000/5 orang<br>Perahu Nyebrang Pulau Putri Rp. 25k/orang"
+      ]
+    },
+    {
+      "tag": "fasilitasnuvasabay",
+      "patterns": [
+        "Fasilitas apa yang ada di Pantai nuvasa bay",
+        "Fasilitas pantai nuvasa bay",
+        "fasilitas pantai nuvasabay",
+        "fasilitas apa saja yang ada di nuvasabay",
+        "wahana apa yang ada di Pantai nuvasa bay",
+        "wahana pantai nuvasa bay",
+        "wahana pantai nuvasabay",
+        "wahana apa saja yang ada di nuvasabay","banana boat","banana boot"
+      ],
+      "responses": [
+        "Berikut fasilitas yang disdiakan di pantai Nuvasa Bay<br>Toilet Free , Mushola, area parkir, Spot Foto<br>Gazebo : Rp.200.000 <br>Alat BBQ, Meja, Air Minum.<br><br>Berikut wahana yang disediakan:<br>Banana Boot Rp.250.000/5 orang<br>Camp Rp 90.000/orang Minimal 6 orang"
+      ]
+    },
+    {
+      "tag": "fasilitasbalebale",
+      "patterns": [
+        "Fasilitas apa saja yang ada di Pantai bale bale",
+        "fasilitas pantai bale bale",
+        "fasilitas balebale",
+        "wahana apa saja yang ada di Pantai bale bale",
+        "wahana pantai bale bale",
+        "wahana balebale","banana boat","banana boot"
+      ],
+      "responses": [
+        "Fasilitas lain yang disediakan Pantai Bale-Bale ini adalah mushola, toilet, kantin, kios souvenir, viewing platform untuk bernarsis-narsis ria, dan hiburan berupa permainan organ tunggal.<br>Sarana permainan yang disediakan Pantai Bale-Bale ini cukup lengkap. Ada cano, papan surfing, banana boat dan juga boat wisata ke Pulau Putri.<br><br>Berikut wahana yang disediakan:<br>Banana Boot Rp.250.000/5 orang<br>Camp Rp 25.000<br>Jembatan Pantai"
+      ]
+    },
+    {
+      "tag": "fasilitaspantaipayung",
+      "patterns": [
+        "Fasilitas yang ada di pantaiPantai Payung apa saja",
+        "Fasilitas pantaipayung",
+        "Fasilitas di pantai payung nongsa",
+        "wahana yang ada di pantaiPantai Payung apa saja",
+        "wahana pantaipayung",
+        "wahana di pantai payung nongsa"
+      ],
+      "responses": [
+        "Anda bisa menikmati berbagai fasilitas saat bersantai di pantai yang mempesona ini. Di antara fasilitas tersebut adalah:<br>1. Tempat parkir yang luas.<br>2. Warung makan.<br>3. Toilet atau kamar mandi.<br>4. Gazebo.<br>5. Penyewaan peralatan olahraga air.<br><br>Berikut wahana yang disediakan:<br>Sampan Rp 25.000/jam<br>Ban Rp 15.000-20.000"
+      ]
+    },
+    {
+      "tag": "fasilitaselyora",
+      "patterns": [
+        "Fasilitas yang ada di pantai Pantai elyora apa saja",
+        "fasilitas apa saja di elyora",
+        "fasilitas di elyora",
+        "fasilitas di pantai elyora",
+        "wahana yang ada di pantai Pantai elyora apa saja",
+        "wahana apa saja di elyora",
+        "wahana di elyora",
+        "wahana di pantai elyora","banana boat","banana boot"
+      ],
+      "responses": [
+        "Fasilitas area parkir sangat luas, Gazebo, Mushola, kantin, ayunan, Toilet, Bermain banana boat dan perahu, olahraga voli pantai, Ayunan kayu untuk spot foto para wisatawan.<br><br>Berikut wahana yang disediakan:<br>Banana Boot Rp.250.000/5orang<br>Camp Rp.20.000/malam"
+      ]
+    },
+    {
+      "tag": "fasilitasmirota",
+      "patterns": [
+        "fasilitas apa saja yang ada di pantai mirota",
+        "fasilitas di mirota",
+        "fasilitas yang ada di pantai mirota",
+        "fasilitas yang ada di mirota",
+        "wahana apa saja yang ada di pantai mirota",
+        "wahana di mirota",
+        "wahana yang ada di pantai mirota",
+        "wahana yang ada di mirota","banana boat","banana boot"
+      ],
+      "responses": [
+        "Fasilitas di pantai Mirota seperti Gazebo, Toilet dan kamar bilas, Tempat bermain, Area parkir, dan kegiatan olahraga air juga tersedia seperti banana boat, kano, dan juga kapal pompong milik nelayan yang dapat Anda sewa.<br><br>Berikut wahana yang disediakan:<br>Banana Boot Rp.50.000/orang"
+      ]
+    },
+    {
+      "tag": "fasilitasglorymelur",
+      "patterns": [
+        "Fasilitas pantai glory melur",
+        "fasilitas yang ada di pantai melur",
+        "fasilitas glory melur",
+        "fasilitas yang ada di pantai glory melur",
+        "fasilitas apa saja yang ada di pantai glory melur",
+        "fasilitas apa saja yang ada di pantai new melur",
+        "wahana pantai glory melur",
+        "wahana yang ada di pantai melur",
+        "wahana glory melur",
+        "wahana yang ada di pantai glory melur",
+        "wahana apa saja yang ada di pantai glory melur",
+        "wahana apa saja yang ada di pantai new melur","banana boat","banana boot"
+      ],
+      "responses": [
+        "Adapun fasilitas yang ada di pantai Melur yaitu : 14 unit Villa, Restaurant sea food, Aula untuk acara ulang tahun, water sport, banana boat, kano, Zetsky, payung untuk berteduh, dan tikar, yang bisa di sewa para pengunjung, Bermain ATV dan juga Motor Listrik sambil menikmati angin sepoi, Minimarket, Beach Bar, dan Live DJ tiap Weekend<br><br>Tiket Masuk 2 tahun - 6sd Rp 5.000/orang Tiket Masuk Remaja - Dewasa Rp 15.000/orang<br><br>Gazebo Rp. 150.000-300.000/malam<br><br>kano Rp 50.000/jam<br><br>camp Rp. 100.000/orang, +200 orang diskon 10%<br><br>villa Rp 1.200.000 - 1.500.000<br><br>Aula besar Rp. 1.200.000 , Aula Kecil Rp 800.000<br><br>Berikut wahana yang disediakan:<br>1. Banana Boot Rp.50.000/orang<br>2. Jet sky Rp500.000/jam"
+      ]
+    },
+    {
+      "tag": "fasilitasviovio",
+      "patterns": [
+        "Fasilitas di pantai vio vio",
+        "Fasilitas apa saja yang ada di vio vio",
+        "fasilitas apa saja di pantai vio vio",
+        "fasilitas pantai vio vio",
+        "fasilitas di vio vio",
+        "wahana di pantai vio vio",
+        "wahana apa saja yang ada di vio vio",
+        "wahana apa saja di pantai vio vio",
+        "wahana pantai vio vio",
+        "wahana di vio vio","banana boat","banana boot"
+      ],
+      "responses": [
+        "Pantai Viovio memiliki tempat yang luas dengan berbagai macam fasilitas yang menunjang objek wisata seperti area parkir, gazebo, toilet, penginapan, area camping, restoran, entertaiment dan mushola.<br>Live Band, Live DJ, Bonfire dan Games setiap Sabtu Malam.<br><br>Tiket Masuk Rp. 15.000/orang<br><br>Glamping Deluxe Rp 800.000 (weekday)<br>Rp 1.050.000 (weekend)<br><br>Gazebo Rp. 300.000/malam<br><br>Berikut wahana yang disediakan:<br>1. Banana Boot Rp.175.000/orang<br>2. Jet sky Rp.300.000 - Rp.1.200.000/jam"
+      ]
+    },
+    {
+      "tag": "fasilitasreviola",
+      "patterns": [
+        "Fasilitas pantai reviola",
+        "fasilitas yang ada di pantai reviola",
+        "fasilitas di reviola",
+        "fasilitas yang ada di pantai reviola",
+        "fasilitas apa saja yang ada di pantai reviola",
+        "wahana pantai reviola",
+        "wahana yang ada di pantai reviola",
+        "wahana di reviola",
+        "wahana yang ada di pantai reviola",
+        "wahana apa saja yang ada di pantai reviola",
+        "Fasilitas yang ada di pantai reviola", "fasilitas pantai reviola", "fasilitas di pantai reviola", "fasilitas apa saja yang ada di pantai reviola", "wahana yang ada di pantai reviola", "wahana reviola", "wahana di pantai reviola", "wahana apa saja yang ada di pantai reviola"
+      ],
+      "responses": [
+        "Fasilitas di pantai Reviola disediakan pondok yang disewakan bagi para wisatawan, disini juga tersedia berbagai macam fasilitas umum seperti toilet, ayunan, kamar mandi bilas serta warung makan, Ayunan dan bangku panjang untuk spot foto para wisatawan, dan Banana Boat."
+      ]
+    },
+    {
+      "tag": "lokasitanjungpinggir",
+      "patterns": [
+        "dimana lokasi di Pantai tanjung Pinggir",
+        "dimana lokasi pantai tanjung pinggir",
+        "dimana tempat pantai tanjung pinggir",
+        "bagaimana cara menuju ke tanjung pinggir",
+        "Pantai tanjung Pinggir berada dimana",
+        "dimana alamat pantai tanjung pinggir"
+      ],
+      "responses": [
+        "Untuk lokasi berada di Tanjung Pinggir, Sekupang, Batam City, Riau Islands<br>Maps:<a href=https://maps.app.goo.gl/Zt2daGerBF35q1Nr7>Pantai Tanjung Pinggir</a>.<br><br>Jarak tempuh menuju pantai membutuhkan waktu kurang lebih sekitar 30-40 menit perjalanan dari Batam Center."
+      ]
+    },
+    {
+      "tag": "lokasinongsabeach",
+      "patterns": [
+        "dimana lokasi di Pantai nongsa beach",
+        "dimana lokasi pantai nongsa beach",
+        "dimana tempat pantai nongsa beach",
+        "bagaimana cara menuju ke nongsa beach",
+        "Pantai nongsa beach berada dimana",
+        "dimana alamat pantai nongsa beach"
+      ],
+      "responses": [
+        "Untuk lokasi berada di Sambau, Nongsa, Batam City, Riau Islands<br>Maps:<a href=https://maps.app.goo.gl/EibYZW68BswhXYHg8>Nongsa Beach</a>.<br><br>Jarak tempuh menuju pantai membutuhkan waktu kurang lebih sekitar 35 menit perjalanan dari Batam Center."
+      ]
+    },
+    {
+      "tag": "lokasinuvasabay",
+      "patterns": [
+        "dimana lokasi di Pantai nuvasa bay",
+        "dimana lokasi pantai nuvasa bay",
+        "dimana tempat pantai nuvasa bay",
+        "bagaimana cara menuju ke nuvasa bay",
+        "Pantai nuvasa bay berada dimana",
+        "dimana alamat pantai nuvasa bay"
+      ],
+      "responses": [
+        "Untuk lokasi berada di Sambau, Nongsa, Batam City, Riau Islands 29465<br>Maps:<a href=https://maps.app.goo.gl/Jauu4vpXhVtpFmN66>Nuvasa Bay</a>.<br><br>Jarak tempuh menuju pantai membutuhkan waktu kurang lebih sekitar 35 menit perjalanan dari Batam Center."
+      ]
+    },
+    {
+      "tag": "lokasibalebale",
+      "patterns": [
+        "dimana lokasi di Pantai Bale-Bale",
+        "dimana lokasi Pantai Bale-Bale",
+        "dimana tempat Pantai Bale-Bale",
+        "bagaimana cara menuju ke Pantai Bale-Bale",
+        "Pantai Bale-Bale beach berada dimana",
+        "dimana alamat Pantai Bale-Bale beach"
+      ],
+      "responses": [
+        "Untuk lokasi berada di Sambau, Kecamatan Nongsa, Kepulauan Riau 29465<br>Maps:<a href=https://maps.app.goo.gl/WFuWj7oiUcn5ZPmD7>Pantai Bale Bale</a>.<br><br>Jarak tempuh menuju pantai membutuhkan waktu kurang lebih sekitar 30-40 menit perjalanan dari Batam Center."
+      ]
+    },
+    {
+      "tag": "lokasipantaipayung",
+      "patterns": [
+        "dimana lokasi di Pantai Payung",
+        "dimana lokasi Pantai Payung",
+        "dimana tempat Pantai Payung",
+        "bagaimana cara menuju ke Pantai Payung",
+        "Pantai Payung berada dimana",
+        "dimana alamat Pantai Payung"
+      ],
+      "responses": [
+        "Untuk lokasi berada di No. 47, RT. 2 RW. 2, Kampung Melayu, Batu Besar, Batam, Kota Batam, Kepulauan Riau 29466<br>Maps:<a href=https://maps.app.goo.gl/9vHybnqTVBvTw8D86>Pantai Payung</a>.<br><br>Jarak tempuh menuju pantai membutuhkan waktu kurang lebih sekitar 30 menit perjalanan dari Batam Center."
+      ]
+    },
+    {
+      "tag": "lokasielyora",
+      "patterns": [
+        "dimana lokasi di Pantai Elyora",
+        "dimana lokasi Pantai Elyora",
+        "dimana tempat Pantai Elyora",
+        "bagaimana cara menuju ke Pantai Elyora",
+        "Pantai Elyora beach berada dimana",
+        "dimana alamat Pantai Elyora"
+      ],
+      "responses": [
+        "Untuk lokasi berada di Galang Baru, Galang, Batam City, Riau Islands 29487<br>Maps:<a href=https://maps.app.goo.gl/caA2pN8URkSP5Hh97>Pantai Elyora</a>.<br><br>Jarak tempuh menuju pantai membutuhkan waktu kurang lebih sekitar 90-100 menit perjalanan dari Batam Center."
+      ]
+    },
+    {
+      "tag": "lokasimirota",
+      "patterns": [
+        "dimana lokasi di pantai Mirota ",
+        "dimana lokasi pantai Mirota ",
+        "dimana tempat pantai Mirota ",
+        "bagaimana cara menuju ke pantai Mirota",
+        "pantai Mirota berada dimana",
+        "dimana alamat pantai Mirota"
+      ],
+      "responses": [
+        "Untuk lokasi berada di Desa Sijantung, Kelurahan Galang Barelang, Pulau Galang, Batam, Sijantung, Galang, Kota Batam, Kepulauan Riau 29485<br>Maps:<a href=https://maps.app.goo.gl/gGZ6Lenrzj9gM4UG6>Pantai Mirota</a>.<br><br>Jarak tempuh menuju pantai membutuhkan waktu kurang lebih sekitar 60 menit perjalanan dari Batam Center."
+      ]
+    },
+    {
+      "tag": "lokasiglorymelur",
+      "patterns": [
+        "dimana lokasi di Pantai Glory Melur",
+        "dimana lokasi Pantai Glory Melur",
+        "dimana tempat Pantai Glory Melur",
+        "bagaimana cara menuju ke Pantai Glory Melur",
+        "Pantai Glory Melur berada dimana",
+        "dimana alamat Pantai Glory Melur",
+        "dimana lokasi di Pantai New Melur",
+        "dimana lokasi Pantai New Melur",
+        "dimana tempat Pantai New Melur",
+        "bagaimana cara menuju ke Pantai New Melur",
+        "Pantai New Melur berada dimana",
+        "dimana alamat Pantai New Melur"
+      ],
+      "responses": [
+        "Untuk lokasi berada di Sijantung, Galang, Batam City, Riau Islands 29485<br>Maps:<a href=https://maps.app.goo.gl/F386rkvLsRSFU1XV9>New Melur Beach</a>.<br><br>Jarak tempuh menuju pantai membutuhkan waktu kurang lebih sekitar 60-70 menit perjalanan dari Batam Center."
+      ]
+    },
+    {
+      "tag": "lokasiviovio",
+      "patterns": [
+        "dimana lokasi di Pantai Viovio",
+        "dimana lokasi Pantai Viovio",
+        "dimana tempat Pantai Viovio",
+        "bagaimana cara menuju ke Pantai Viovio",
+        "Pantai Viovio berada dimana",
+        "dimana alamat Pantai Viovio"
+      ],
+      "responses": [
+        "Untuk lokasi berada di Sijantung, Galang, Batam City, Riau Islands 29485<br>Maps:<a href=https://maps.app.goo.gl/mVaUmNvcobW5AC9D7>Pantai Vio Vio</a>.<br><br>Jarak tempuh menuju pantai membutuhkan waktu kurang lebih sekitar 60-70 menit perjalanan dari Batam Center."
+      ]
+    },
+    {
+      "tag": "lokasireviola",
+      "patterns": [
+        "dimana lokasi di pantai Reviola",
+        "dimana lokasi pantai Reviola",
+        "dimana tempat pantai Reviola",
+        "bagaimana cara menuju ke pantai Reviola",
+        "pantai Reviola beach berada dimana",
+        "dimana alamat pantai Reviola"
+      ],
+      "responses": [
+        "Untuk lokasi berada di Galang Baru, Galang, Kota Batam, Kepulauan Riau<br>Maps:<a href=https://maps.app.goo.gl/uBbgi9jfcMZjrcWv9>Pantai Reviola</a>.<br><br>Jarak tempuh menuju pantai membutuhkan waktu kurang lebih sekitar 80-90 menit perjalanan dari Batam Center."
+      ]
+    },
+    {
+      "tag": "t1",
+      "patterns": [
+        "Berapa harga tiket masuk ke pantai Tanjung Pinggir?",
+        "Tiket masuk pantai Tanjung Pinggir berapa ya?",
+        "Berapa biaya untuk masuk ke pantai Tanjung Pinggir?",
+        "Tiket masuk pantai Tanjung Pinggir per orang berapa?",
+        "Tiket masuk ke pantai Tanjung Pinggir berapa per orang?",
+        "Berapa harga tiket masuk ke pantai tanjungpinggir?",
+        "Tiket masuk pantai tanjungpinggir berapa ya?",
+        "Berapa biaya untuk masuk ke pantai tanjungpinggir?",
+        "Tiket masuk pantai tanjungpinggir per orang berapa?",
+        "Tiket masuk ke pantai tanjungpinggir berapa per orang?",
+        "berapa tiket masuk pantai tanjung pinggir",
+        "berapa tiket masuk tanjung pinggir",
+        "tiket masuk pantai tanjung pinggir", "tiket tanjung pinggir", "tiket masuk ke pantai tanjung pinggir"
+      ],
+      "responses": [
+        "Harga Tiket Masuk : Remaja - Dewasa Rp. 10.000"
+      ]
+    },
+    {
+      "tag": "t2",
+      "patterns": [
+        "Berapa harga tiket masuk ke pantai Nongsa Beach?",
+        "Tiket masuk pantai Nongsa Beach berapa ya?",
+        "Berapa biaya untuk masuk ke pantai Nongsa Beach?",
+        "Tiket masuk pantai Nongsa Beach per orang berapa?",
+        "Tiket masuk ke pantai Nongsa Beach berapa per orang?",
+        "berapa tiket masuk nongsa beach",
+        "berapa tiket masuk pantai nongsa",
+        "tiket masuk pantai nongsa", "tiket nongsa", "tiket masuk ke pantai nongsa"
+      ],
+      "responses": [
+        "Harga tiket masuk ke pantai ini adalah Rp 3.000 per orang."
+      ]
+    },
+    {
+      "tag": "t3",
+      "patterns": [
+        "Berapa harga tiket masuk ke pantai Nuvasa Bay?",
+        "Tiket masuk pantai Nuvasa Bay berapa ya?",
+        "Berapa biaya untuk masuk ke pantai Nuvasa Bay?",
+        "Tiket masuk pantai Nuvasa Bay per orang berapa?",
+        "Tiket masuk ke pantai Nuvasa Bay berapa per orang?",
+        "berapa tiket masuk nuvasa bay",
+        "berapa tiket masuk nuvasabay",
+        "berapa tiket masuk nuvasa",
+        "tiket masuk pantai nuvasa bay", "tiket nuvasa bay", "tiket masuk ke pantai nuvasa bay"
+      ],
+      "responses": [
+        "Harga tiket masuk ke pantai ini adalah Rp 30.000 di Weekday dan Rp 40.000 di Weekend."
+      ]
+    },
+    {
+      "tag": "t4",
+      "patterns": [
+        "Berapa harga tiket masuk ke pantai Bale Bale?",
+        "Tiket masuk pantai Bale Bale berapa ya?",
+        "Berapa biaya untuk masuk ke pantai Bale Bale?",
+        "Tiket masuk pantai Bale Bale per orang berapa?",
+        "Tiket masuk ke pantai Bale Bale berapa per orang?",
+        "berapa tiket masuk bale bale",
+        "tiket masuk pantai bale bale", "tiket bale bale", "tiket masuk ke pantai bale bale"
+      ],
+      "responses": [
+        "Harga tiket masuk ke pantai ini adalah 10.000/orang"
+      ]
+    },
+    {
+      "tag": "t5",
+      "patterns": [
+        "Berapa harga tiket masuk ke pantai Payung?",
+        "Tiket masuk pantai Payung berapa ya?",
+        "Berapa biaya untuk masuk ke pantai Payung?",
+        "Tiket masuk pantai Payung per orang berapa?",
+        "Tiket masuk ke pantai Payung berapa per orang?",
+        "berapa tiket masuk pantai payung",
+        "tiket masuk pantai payung", "tiket payung", "tiket masuk ke pantai payung"
+      ],
+      "responses": [
+        "Harga Tiket Dewasa Rp 5.000 dan untuk Anak Rp 3.000"
+      ]
+    },
+    {
+      "tag": "t6",
+      "patterns": [
+        "Berapa harga tiket masuk ke pantai Elyora?",
+        "Tiket masuk pantai Elyora berapa ya?",
+        "Berapa biaya untuk masuk ke pantai Elyora?",
+        "Tiket masuk pantai Elyora per orang berapa?",
+        "Tiket masuk ke pantai Elyora berapa per orang?",
+        "berapa tiket masuk elyora",
+        "tiket masuk pantai elyora", "tiket elyora", "tiket masuk ke pantai elyora"
+      ],
+      "responses": [
+        "Harga tiket masuk ke pantai ini adalah 10.000/orang"
+      ]
+    },
+    {
+      "tag": "t7",
+      "patterns": [
+        "Berapa harga tiket masuk ke pantai Mirota?",
+        "Tiket masuk pantai Mirota berapa ya?",
+        "Berapa biaya untuk masuk ke pantai Mirota?",
+        "Tiket masuk pantai Mirota per orang berapa?",
+        "Tiket masuk ke pantai Mirota berapa per orang?",
+        "berapa tiket masuk mirota",
+        "tiket masuk pantai mirota", "tiket mirota", "tiket masuk ke pantai mirota"
+      ],
+      "responses": [
+        "Harga tiket masuk ke pantai ini adalah 10.000/orang dan Tiket Masuk untuk Malam Hari Rp 15.000/orang"
+      ]
+    },
+    {
+      "tag": "t8",
+      "patterns": [
+        "Berapa harga tiket masuk ke pantai Glory Melur?",
+        "Tiket masuk pantai Glory Melur berapa ya?",
+        "Berapa biaya untuk masuk ke pantai Glory Melur?",
+        "Tiket masuk pantai Glory Melur per orang berapa?",
+        "Tiket masuk ke pantai Glory Melur berapa per orang?",
+        "Berapa harga tiket masuk ke pantai New Melur?",
+        "Tiket masuk pantai New Melur berapa ya?",
+        "Berapa biaya untuk masuk ke pantai New Melur?",
+        "Tiket masuk pantai New Melur per orang berapa?",
+        "Tiket masuk ke pantai New Melur berapa per orang?",
+        "berapa tiket masuk melur",
+        "berapa tiket masuk glory melur",
+        "tiket masuk pantai glory melur", "tiket glory melur", "tiket masuk ke pantai glory melur","tiket melur","tiket masuk melur"
+      ],
+      "responses": [
+        "Tiket Masuk Anak-Anak Rp 5.000/orang<br>Tiket Masuk Remaja - Dewasa Rp 15.000/orang"
+      ]
+    },
+    {
+      "tag": "t9",
+      "patterns": [
+        "Berapa harga tiket masuk ke pantai Vio Vio?",
+        "Tiket masuk pantai Vio Vio berapa ya?",
+        "Berapa biaya untuk masuk ke pantai Vio Vio?",
+        "Tiket masuk pantai Vio Vio per orang berapa?",
+        "Tiket masuk ke pantai Vio Vio berapa per orang?",
+        "berapa tiket masuk vio vio",
+        "tiket vio vio","tiket masuk pantai vio vio", "tiket vio vio", "tiket masuk ke pantai vio vio"
+      ],
+      "responses": [
+        "Harga Tiket Masuk Pantai ini Rp. 15.000/orang"
+      ]
+    },
+    {
+      "tag": "t10",
+      "patterns": [
+        "Berapa harga tiket masuk ke pantai Reviola?",
+        "Tiket masuk pantai Reviola berapa ya?",
+        "Berapa biaya untuk masuk ke pantai Reviola?",
+        "Tiket masuk pantai Reviola per orang berapa?",
+        "Tiket masuk ke pantai Reviola berapa per orang?",
+        "berapa tiket masuk reviola",
+        "tiket masuk pantai reviola", "tiket reviola", "tiket masuk ke pantai reviola"
+      ],
+      "responses": [
+        "Harga tiket masuk ke pantai ini adalah 10.000/orang"
+      ]
+    }
+  ]
+}

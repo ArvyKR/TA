@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="chatbox" class="chatbox">
+        <div class="chatbox__support">
+          <div class="chatbox__header">
+            <div class="chatbox__image--header">
+              <img
+                src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"
+                alt="image"
+              />
+            </div>
+            <div class="chatbox__content--header">
+              <h4 class="chatbox__heading--header">Chat support</h4>
+              <p class="chatbox__description--header">
+                Selamat Datang Di Bliss Beach, Kami menyediakan Rekomendasi
+                Pantai untuk Daerah Kota Batam. Kamu ingin pergi kemana?
+              </p>
+            </div>
+          </div>
+          <div class="chatbox__messages">
+            <div></div>
+          </div>
+          <div class="chatbox__footer">
+            <input
+              id="selectedText"
+              type="text"
+              placeholder="Write a message..."
+            />
+            <button class="chatbox__send--footer send__button">Send</button>
+          </div>
+        </div>
+        <div class="chatbox__button">
+          <button><img src="./images/chatbox-icon.svg" /></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "3aef879a-61c6-4801-aac1-4d901bad58e5", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "dfaedbe2-1eee-47d6-b58e-251f36440beb", // The ID of your service instance.
+        onLoad: async (instance) => {
+          await instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+
+    <!-- <script>
+      async function sendMessage() {
+        let message = document.getElementById("message").value;
+        let response = await fetch("/predict", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ message: message }),
+        });
+        let data = await response.json();
+        document.getElementById("chat").innerHTML = data.answer;
+      }
+    </script> -->
+
+    <!-- <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script> -->
+  </body>
+</html>
