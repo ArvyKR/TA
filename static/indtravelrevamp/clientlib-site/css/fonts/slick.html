@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.indonesia.travel/etc/designs/indtravelrevamp/clientlib-site/css/fonts/slick.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jul 2024 04:01:03 GMT -->
+<head>
+	<meta charset="utf-8">
+	<title>    Oops! Page not found.
+</title>
+	<link href='https://fonts.googleapis.com/css?family=Signika:300,500,700' rel='stylesheet' type='text/css'>
+	
+	<style>
+		
+		* { margin: 0; padding: 0; }
+		
+		html { 
+			background: url(../../../../../../content/dam/indtravelrevamp/activities/header/error.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			height: 100%;
+    		width: 100%;
+    		font-family: 'Signika', Georgia, Serif;
+		}
+
+		body {
+			display: table;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.page-wrap { 
+			display: table-cell;
+			text-align: center;
+    		vertical-align: middle;
+			width: 100%; 
+			padding: 0; 
+		}
+
+		.error-code {
+			font-size: 70px;
+		}
+
+		.content {
+            /*background-color: rgba(255,255,255,0.7);*/
+			color: white;
+			text-align: center;
+			padding: 20px;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+		}
+
+		.logo {
+			width: 300px;
+		}
+
+		a {
+			color: #3A73A8;
+			text-decoration: none;
+		}
+
+		a:hover {
+			opacity: 0.5;
+		}
+        .button {
+          padding: 15px 25px;
+          font-size: 24px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: #fff;
+          background-color: #575755;
+          border: none;
+          border-radius: 15px;
+            border:1px solid #ffffff;
+            margin-top: 30px;
+            /*box-shadow: 0 9px #999;*/
+
+        }
+        
+        .button:hover {background-color: #000}
+        
+        .button:active {
+          background-color: #000;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+        p{
+            padding:4px;
+            font-size: 1.2em;
+        }
+        h1{
+                font-size: 3.5em;
+            font-weight: bold;
+        }
+	</style>
+</head>
+
+<body>
+  <script src="../../../../../../../cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div class="page-wrap">
+		<div class="content">
+			<h1>    Oops, Sorry,
+</h1>
+            <p>we can't find the page you're looking for :(</p>
+<p>You can still continue your virtual journey in #Wonderfullindonesia</p>
+<p>by checking out other pages.</p>
+            <p><button class="button" onclick="redirectParentPage(event)">Explore Indonesia</button></p>
+
+
+					</div>
+	</div>
+<script type="text/javascript">
+    function redirectParentPage(e){
+        e.preventDefault();
+        var path = window.location.pathname.split('https://www.indonesia.travel/');
+        var redirectTo = '';
+        if(window.location.pathname.indexOf('/content/indtravelrevamp')>-1){
+            redirectTo = 'https://www.indonesia.travel/content/indtravelrevamp/id/id/home.html';
+            if(path.length>6)
+        		redirectTo = '/'+path[1]+'/'+path[2]+'/'+path[3]+'/'+path[4]+'/'+path[5]+'.html';
+        }else{
+            redirectTo = 'https://www.indonesia.travel/';
+            if(path.length>4)
+				redirectTo = '/'+path[1]+'/'+path[2]+'/'+path[3];
+        }
+        window.location.href = redirectTo;
+    }
+    var path = window.location.pathname.split('https://www.indonesia.travel/');
+    var redirectTo = '';
+    if(window.location.pathname.indexOf('/content/indtravelrevamp')>-1){
+        redirectTo = 'https://www.indonesia.travel/content/indtravelrevamp/id/id/home.html';
+        if(path.length>6)
+            redirectTo = '/'+path[1]+'/'+path[2]+'/'+path[3]+'/'+path[4]+'/'+path[5]+'.html';
+        //console.log("abc");
+    }else{
+        redirectTo = 'https://www.indonesia.travel/';
+        if(path.length == 4){
+			redirectTo = '/'+path[1]+'/'+path[2];
+            if(window.location.pathname === '/id/id/tourism-office'){
+                 window.location.href = redirectTo;
+        		console.log(redirectTo);
+            }
+        	if(window.location.pathname === '/id/idtrip-ideas/bali-s-great-spa-and-wellness-retreats-you-must-visit-right-away'){
+                 window.location.href = 'https://www.indonesia.travel/id/id/';
+        		console.log(redirectTo);
+            }
+
+
+        }
+        else if(path.length == 5){
+            redirectTo = '/'+path[1]+'/'+path[2];
+            redirectPage = '/'+path[1]+'/'+path[2]+'/'+path[3];
+            if(redirectPage === '/id/id/info-acara'){
+					redirectTo = '/id/id/info-acara';
+             }
+
+			if(redirectPage === '/id/id/cerita-perjalanan'){
+					redirectTo = '/id/id/cerita-perjalanan';
+             }
+            /*if(window.location.pathname === '/id/id/cerita-perjalanan/the-indonesia-beyond-bali'){
+                  redirectTo = '/id/id/cerita-perjalanan';
+                  }*/
+            if(redirectPage === '/id/id/ide-liburan'){
+                if(window.location.pathname === '/id/id/ide-liburan/5-tempat-belanja-kerajinan-tangan-di-yogyakarta'){
+                  redirectTo = '/id/id/ide-liburan/cari-kerajinan-tangan-di-yogyakarta-yuk-kunjungi-5-tempat-ini';
+                }else if(window.location.pathname === '/id/id/ide-liburan/are-you-a-culinary-enthusiast-do-not-miss-these-7-likupang-traditional-food-and-cuisine'){
+                  redirectTo = '/id/id/ide-liburan/10-destinasi-ekowisata-terbaik-di-indonesia-yang-wajib-kamu-kunjungi';
+                }else if(window.location.pathname === '/id/id/ide-liburan/these-11-banyuwangi-food-s-will-your-mind-right-place-for-food-hunter'){
+                  redirectTo = '/id/id/ide-liburan/5-surga-kerajinan-tangan-murah-meriah-di-jawa-tengah';
+                }else if(window.location.pathname === '/id/id/ide-liburan/bromo-tengger-semeru-national-park-the-reasons-why-travellers-never-skip-it'){
+                  redirectTo = '/id/id/campaign/bangga-berwisata-di-indonesia';
+                }else if(window.location.pathname === '/id/id/ide-liburan/4-reasons-to-explore-the-magic-of-wakatobi'){
+                  redirectTo = '/event/id/home';
+                }else if(window.location.pathname === '/id/id/ide-liburan/rayakan-indah-dan-nikmatnya-berkah-ramadhan-dengan-10-rekomendasi-hidangan-nikmat'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara/bali';
+                }else if(window.location.pathname === '/id/id/ide-liburan/fun-ways-to-be-healthier-in-ubud-bali'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara/bali';
+                }else{
+					redirectTo = '/id/id/ide-liburan';
+                }
+            }
+
+             if(redirectPage === '/id/id/berita'){
+				if(window.location.pathname === '/id/id/ide-berita/fun-ways-to-be-healthier-in-ubud-bali'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara/bali';
+                }else{
+					redirectTo = '/id/id/berita';
+                }
+             }
+			if(window.location.pathname === '/id/id/campaign/welcome-back-to-bali'){
+				redirectTo = '/id/en/campaign/welcome-back-to-bali';
+            }
+
+            window.location.href = redirectTo;
+            //console.log(redirectTo);
+    	}
+        else if(path.length == 6){
+            redirectTo = '/'+path[1]+'/'+path[2]+'/'+path[3]+'/'+path[4];
+            if(window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/seminyak' || window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/gunung-agung'){
+				redirectTo = '/id/id/destinasi/bali-nusa-tenggara/bali';
+            }
+            if(window.location.pathname === '/id/id/destinasi/sumatra/batam-dan-bintan-kota-pelabuhan-yang-indah-di-indonesia'){
+				redirectTo = '/id/id/destinasi/sumatra/bintan-island';
+            }
+			 if(window.location.pathname === '/id/id/news-events/news/aceh-is-safe-for-tourists-following-earthquake-at-pidie-jaya-district'){
+				redirectTo = '/id/id/news-events';
+            }
+            window.location.href = redirectTo;
+            //console.log(window.location.pathname);
+    	}
+         else if(path.length == 7){
+            redirectTo = '/'+path[1]+'/'+path[2]+'/'+path[3]+'/'+path[4]+'/'+path[5];
+             if(window.location.pathname ==='/id/id/destinasi/java/yogyakarta/parangtritis-beach'){
+				redirectTo = '/id/id/destinasi/bali-nusa-tenggara/bali';
+            }else if(window.location.pathname === '/id/id/destinasi/sulawesi/gorontalo/togean-island'){
+                  redirectTo = '/id/id/destinasi/sulawesi';
+            }else if(window.location.pathname === '/id/id/destinasi/java/karimun-jawa/karimun-jawa-marine-national-park'){
+                  redirectTo = '/id/id/destinasi/java';
+            }else if(window.location.pathname === '/id/id/destinasi/java/bogor/cibodas-national-park'){
+                  redirectTo = '/id/id/destinasi/java';
+            }else if(window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/west-bali-national-park/bali-starling-songbird'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara';
+            }else if(window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/bali/the-holy-springs-of-tirta-empul'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara';
+            }else if(window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/seminyak/royal-beach-seminyak-a-truly-romantic-getaway'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara';
+            }else if(window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/bali/pura-besakih'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara';
+            }else if(window.location.pathname === '/id/id/destinasi/sumatra/danau-toba/samosir-island'){
+                  redirectTo = '/id/id/destinasi/sumatra';
+            }else if(window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/seminyak/seminyak-restaurants'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara/bali';
+            }else if(window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/lombok/gili-trawangan-and-the-gilis'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara/bali';
+            }else if(window.location.pathname === '/id/id/destinasi/sumatra/payakumbuh/the-harau-valley'){
+                  redirectTo = '/id/id/destinasi/sumatra';
+            }else if(window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/lombok/the-senggigi-beach'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara/bali';
+            }else if(window.location.pathname === '/id/id/destinasi/sulawesi/bitung/the-lembeh-strait'){
+                  redirectTo = '/id/id/destinasi/sulawesi';
+            }else if(window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/flores/liang-bua'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara/bali';
+            }else if(window.location.pathname === '/id/id/destinasi/bali-nusa-tenggara/flores/lake-kelimutu'){
+                  redirectTo = '/id/id/destinasi/bali-nusa-tenggara/bali';
+            }
+			
+            window.location.href = redirectTo;
+             //console.log(redirectTo);
+    	}
+        else if(path.length>7){
+            redirectTo = '/'+path[1]+'/'+path[2]+'/'+path[3]+'/'+path[4]+'/'+path[5]+'/'+path[6];
+            window.location.href = redirectTo;
+            //console.log(window.location.pathname);
+    	}
+    }
+	https://www.indonesia.travel/id/id/destinasi/sulawesi/gorontalo/togean-island
+    //console.log(path.length);
+    //window.location.href = redirectTo;
+</script>	
+</body>
+
+
+<!-- Mirrored from www.indonesia.travel/etc/designs/indtravelrevamp/clientlib-site/css/fonts/slick.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jul 2024 04:01:03 GMT -->
+</html>

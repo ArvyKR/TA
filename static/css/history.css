@@ -1,0 +1,35 @@
+h2 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  table caption {
+      padding: .5em 0;
+  }
+  
+  table.dataTable th,
+  table.dataTable td {
+    white-space: nowrap;
+  }
+  
+  .p {
+    text-align: center;
+    padding-top: 140px;
+    font-size: 14px;
+  }
+
+  .blur-background {
+    backdrop-filter: blur(5px);
+    /* Adjust the blur intensity as needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the background color and opacity */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    /* Ensure this is higher than the modal's z-index */
+    display: none;
+    /* Hide initially */
+  }
